@@ -10,11 +10,11 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* _Git_
+* _Atom_
+* _CSS_
+* _Javascript_
+* _Html_
 
 ## Known Bugs
 
