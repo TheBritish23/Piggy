@@ -28,6 +28,12 @@ _email.com_
 
 _{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
 
+## Specifications
+
+_Spec 1: Turn stops for when ever they roll a one_
+ _Input: Player 1: 1_
+ _Output: "Turn Over"_
+
 ### License
 
 MIT License
