@@ -32,3 +32,11 @@ h2 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  }
+
+  .player-0-panel, .player-1-panel {
+    width: 50%;
+    float: left;
+    height: 600px;
+    padding: 100px;
+}
