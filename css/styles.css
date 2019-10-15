@@ -41,6 +41,10 @@ h2 {
     padding: 100px;
 }
 
+ .rules-panel {
+	 line-height: 30px;
+ }
+
 // player
 
 .player-name {
