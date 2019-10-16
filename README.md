@@ -1,6 +1,6 @@
 # _Piggy_
 
-#### _{Brief description of application}, 10/9/2019_
+#### _A game of digital Pig Dice, 10/9/2019_
 
 #### By _**Soroush Azizi**_
 
