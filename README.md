@@ -30,9 +30,17 @@ _{Tell me about the languages and tools you used to create this app. Assume that
 
 ## Specifications
 
-_Spec 1: Turn stops for when ever they roll a one_
+_Spec 1: Turn stops for the player when ever they roll a one._
  _Input: Player 1: 1_
  _Output: "Turn Over"_
+
+_Spec 2: Player can choose how many are playing._
+  _Input: 1 or 2_
+  _Output: Player1/Player2_
+
+_Spec 3: Game ends when Player reaches 25._
+  _Input: 25_
+  _Output: "You Win!"_
 
 ### License
 
