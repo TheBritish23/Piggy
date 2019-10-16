@@ -42,6 +42,10 @@ _Spec 3: Game ends when Player reaches 25._
   _Input: 25_
   _Output: "You Win!"_
 
+_Spec 4: If Player 1 loses his turn, then it's Player 2 turn._
+  _Input: Player 1: 1_
+  _Output: Player 2: "Roll Dice"_
+
 ### License
 
 MIT License
