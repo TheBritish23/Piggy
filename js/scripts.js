@@ -15,12 +15,13 @@ function gaMe(){
 document.querySelector('.btn-hold').addEventListener('click', function(){
 		if (gamePlaying) {
 			disableBtn(btnRoll, 1000);
-			// Add current score to global score
 			scores[activePlayer] += roundScore;
+
+      document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
 
 // User interface logic
 $(document).ready(function() {
   $("form#hog").submit(function(event) {
     event.preventDefault()
   })
-});
+})
