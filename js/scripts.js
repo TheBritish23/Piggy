@@ -6,11 +6,11 @@ function Rules() {
 
 // Business logic for gaMe
 function gaMe(){
-  var icons = document.getElementsByTagName('x');
+  var icons = document.querySelector('x');
   for (var x = 0; x < array.length; x++) {
-    array[x]
+    array[x].gaMe.remove('color-' + activePlayer);
+		}
   }
-}
 
 document.querySelector('.btn-hold').addEventListener('click', function(){
 		if (gamePlaying) {
