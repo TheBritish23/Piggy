@@ -19,7 +19,6 @@ document.querySelector('.btn-hold').Click('click', function(){
     }
   })
 
-      document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
 
 // User interface logic
 $(document).ready(function() {

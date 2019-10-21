@@ -33,15 +33,11 @@ h4 {
 }
 
   .player-0-panel, .player-1-panel {
-    width: 50%;
+    width: 40%;
     float: left;
-    height: 600px;
-    padding: 100px;
+    height: 800px;
+    padding: 90px;
 }
-
- .rules-panel {
-	 line-height: 30px;
- }
 
 // player
 
@@ -85,15 +81,6 @@ h4 {
 .active-0 { background-color: rgba(255, 175, 189, 0.1) }
 .active-1 { background-color: rgba(46, 204, 113, 0.1) }
 .active-0 .player-name, .active-1 .player-name { font-weight: 300; }
-
-.active .player-name::after {
-    content: "\2022";
-    font-size: 47px;
-    position: absolute;
-    color: #EB4D4D;
-    top: -7px;
-    right: 10px;
-}
 
 .player-current-box-0 {
     background-color: #EB4D4D;
