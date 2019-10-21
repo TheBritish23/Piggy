@@ -12,10 +12,12 @@ function gaMe(){
 		}
   }
 
-document.querySelector('.btn-hold').addEventListener('click', function(){
+document.querySelector('.btn-hold').Click('click', function(){
 		if (gamePlaying) {
 			disableBtn(btnRoll, 1000);
 			scores[activePlayer] += roundScore;
+    }
+  })
 
       document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
 
