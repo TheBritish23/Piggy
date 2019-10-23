@@ -4,19 +4,21 @@ function Rules() {
   this.currentId = 0
   }
 
-// Business logic for gaMe
-function gaMe(){
-  for (var x = 0; x < array.length; x++) {
-    array[x].gaMe.remove('color-' + activePlayer);
-		}
+  Rules.prototype.newgaMe = function(gaMe) {
+    gaMe.id = this.assignId();
+    this.gaMe.push(gaMe);
   }
 
-document.querySelector('.btn-hold').Click('click', function(){
-		if (gamePlaying) {
-			disableBtn(btnRoll, 1000);
-			scores[activePlayer] += roundScore;
-    }
-  })
+  Rules.prototype.assignId = function() {
+    this.currentId += 1;
+    return this.currentId;
+  }
+
+// Business logic for gaMe
+function Tickets(rUles, dIce) {
+  this.rUles = rUles;
+  this.dIce = dIce;
+}
 
 
 // User interface logic
