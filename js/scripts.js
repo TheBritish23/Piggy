@@ -6,7 +6,6 @@ function Rules() {
 
 // Business logic for gaMe
 function gaMe(){
-  var icons = document.querySelector('x');
   for (var x = 0; x < array.length; x++) {
     array[x].gaMe.remove('color-' + activePlayer);
 		}
@@ -21,8 +20,10 @@ document.querySelector('.btn-hold').Click('click', function(){
 
 
 // User interface logic
+var rules = new Rules();
+
 $(document).ready(function() {
   $("form#hog").submit(function(event) {
     event.preventDefault()
   })
-})
+ })
