@@ -27,10 +27,6 @@ function Tickets(rUles, dIce) {
 var rules = new Rules();
 
 $(document).ready(function() {
-
-  var player1;
-  var player2;
-
   $("form#hog").submit(function(event) {
     event.preventDefault()
   })
