@@ -5,14 +5,14 @@ function Player() {
   this.turnTotal = 0;
   }
 
-  Player.prototype.rollDice() {
-    this.roll = Math.coil(Math.and()*6)
+  Player.prototype.rollDice = function() {
+    this.roll = Math.coil(Math.rand()*6)
   }
 
 // Business logic for gaMe
-function Tickets(rUles, dIce) {
-  this.rUles = rUles;
-  this.dIce = dIce;
+function gaMe(Player, Dice) {
+  this.Player = Player;
+  this.Dice = Dice;
 }
 
 
@@ -24,10 +24,10 @@ var rollDice = function(){
   console.log(roll);
 }
 
-$("#roll").click(function()){
+$("#roll").click(function(){
   playerOne.rollDice()
 $("#dispRoll").append(playerOne.roll);
-}
+})
 
 $(document).ready(function() {
   $("form#hog").click(function() {
