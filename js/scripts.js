@@ -1,17 +1,12 @@
 // Business logic for Rules
-function Rules() {
-  this.Game = [],
-  this.currentId = 0
+function Player() {
+  this.roll = 0;
+  this.total = 0;
+  this.turnTotal = 0;
   }
 
-  Rules.prototype.newgaMe = function(gaMe) {
-    gaMe.id = this.assignId();
-    this.gaMe.push(gaMe);
-  }
-
-  Rules.prototype.assignId = function() {
-    this.currentId += 1;
-    return this.currentId;
+  Player.prototype.rollDice() {
+    this.roll = Math.coil(Math.and()*6)
   }
 
 // Business logic for gaMe
@@ -24,10 +19,19 @@ function Tickets(rUles, dIce) {
 
 
 // User interface logic
-var rules = new Rules();
+var rollDice = function(){
+  letRoll = Math.ceil(Math.rand()*6);
+  console.log(roll);
+}
+
+$("#roll").click(function()){
+  playerOne.rollDice()
+$("#dispRoll").append(playerOne.roll);
+}
 
 $(document).ready(function() {
-  $("form#hog").submit(function(event) {
+  $("form#hog").click(function() {
+    rollDice();
     event.preventDefault()
   })
  })
