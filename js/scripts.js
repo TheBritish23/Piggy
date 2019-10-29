@@ -1,4 +1,4 @@
-// Business logic for Rules
+// Business logic for Player
 function Player() {
   this.roll = 0;
   this.total = 0;
@@ -10,10 +10,13 @@ function Player() {
   }
 
 // Business logic for gaMe
-function gaMe(Player, Dice) {
+function gaMe(Player, Roll) {
   this.Player = Player;
-  this.Dice = Dice;
+  this.Roll = Roll;
 }
+
+
+
 
 
 
@@ -24,7 +27,7 @@ var rollDice = function(){
   console.log(roll);
 }
 
-$("#roll").click(function(){
+$("#Roll").click(function(){
   playerOne.rollDice()
 $("#dispRoll").append(playerOne.roll);
 })
