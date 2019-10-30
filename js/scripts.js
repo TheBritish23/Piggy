@@ -13,13 +13,15 @@ function Player() {
     this.turnTotal = Math.display
   }
 
-// Business logic for gaMe
-function gaMe(Player, Roll) {
+// Business logic for Game
+function Game(Player, Roll) {
   this.Player = Player;
   this.Roll = Roll;
 }
 
-
+  Game.prototype.playerOne = function() {
+    
+  }
 
 
 
