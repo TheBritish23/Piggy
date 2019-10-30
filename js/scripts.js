@@ -9,6 +9,10 @@ function Player() {
     this.roll = Math.coil(Math.rand()*6)
   }
 
+  Player.prototype.turnTotalScore = function() {
+    this.turnTotal = Math.display
+  }
+
 // Business logic for gaMe
 function gaMe(Player, Roll) {
   this.Player = Player;
@@ -27,9 +31,9 @@ var rollDice = function(){
   console.log(roll);
 }
 
-$("#Roll").click(function(){
+$("#roll").click(function(){
   playerOne.rollDice()
-$("#dispRoll").append(playerOne.roll);
+$("#disproll").append(playerOne.roll);
 })
 
 $(document).ready(function() {
