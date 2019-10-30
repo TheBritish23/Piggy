@@ -20,7 +20,7 @@ function Game(Player, Roll) {
 }
 
   Game.prototype.playerOne = function() {
-    
+    this.Player = 
   }
 
 
