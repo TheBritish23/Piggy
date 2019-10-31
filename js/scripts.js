@@ -7,8 +7,22 @@ function Player() {
 
   Player.prototype.rollDice = function() {
     this.roll = Math.ceil(Math.random()*6)
-    console.log(this.roll)
+    this.turnTotal += this.roll;
+    console.log(this.roll, this.turnTotal)
   }
+
+  Player.prototype.checkTurn = functions() {
+    if this.roll === 1{
+    }
+    }
+    else if (this.turn) = 25 {
+    }
+    }
+    else{
+      this.turn += this.roll
+    }
+  }
+
 
   // Player.prototype.turnTotalScore = function() {
   //   this.turnTotal = Math.display
@@ -41,7 +55,6 @@ function Player() {
 $(document).ready(function() {
   var playerOne = new Player()
     $(".btn-roll").click(function(){
-      console.log("click")
       playerOne.rollDice()
     $("#disproll").append(playerOne.roll);
     event.preventDefault()
