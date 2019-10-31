@@ -6,45 +6,44 @@ function Player() {
   }
 
   Player.prototype.rollDice = function() {
-    this.roll = Math.coil(Math.rand()*6)
+    this.roll = Math.ceil(Math.random()*6)
+    console.log(this.roll)
   }
 
-  Player.prototype.turnTotalScore = function() {
-    this.turnTotal = Math.display
-  }
+  // Player.prototype.turnTotalScore = function() {
+  //   this.turnTotal = Math.display
+  // }
 
 // Business logic for Game
-function Game(Player, Roll) {
-  this.Player = Player;
-  this.Roll = Roll;
-}
-
-  Game.prototype.playerOne = function() {
-    this.Player =
-  }
-
-  Game.prototype.Roll = function() {
-    console.log(this.Player, this.Roll);
-  }
+// function Game(Player, Roll) {
+//   this.Player = Player;
+//   this.Roll = Roll;
+// }
+//
+//   Game.prototype.playerOne = function() {
+//     this.Player =
+//   }
+//
+//   Game.prototype.Roll = function() {
+//     console.log(this.Player, this.Roll);
+//   }
 
 
 
 
 
 // User interface logic
-var rollDice = function(){
-  letRoll = Math.ceil(Math.rand()*6);
-  console.log(roll);
-}
-
-$("#roll").click(function(){
-  playerOne.rollDice()
-$("#disproll").append(playerOne.roll);
-})
+// var rollDice = function(){
+//   letRoll = Math.ceil(Math.rand()*6);
+//   console.log(roll);
+// }
 
 $(document).ready(function() {
-  $("form#hog").click(function() {
-    rollDice();
+  var playerOne = new Player()
+    $(".btn-roll").click(function(){
+      console.log("click")
+      playerOne.rollDice()
+    $("#disproll").append(playerOne.roll);
     event.preventDefault()
+   })
   })
- })
