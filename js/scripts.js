@@ -11,15 +11,18 @@ function Player() {
     console.log(this.roll, this.turnTotal)
   }
 
-  Player.prototype.checkTurn = functions() {
-    if this.roll === 1{
+  Player.prototype.checkTurn = functions(){
+    if this.roll === 1
+    {
+      result = 1;
     }
+    else if (this.turn) = 25
+    {
+      result = 25;
     }
-    else if (this.turn) = 25 {
-    }
-    }
-    else{
+    else {
       this.turn += this.roll
+      this.turn += 25;
     }
   }
 
