@@ -3,6 +3,7 @@ function Player() {
   this.roll = 0;
   this.total = 0;
   this.turnTotal = 0;
+  this.playername;
   }
 
   Player.prototype.rollDice = function() {
@@ -12,12 +13,10 @@ function Player() {
   }
 
   Player.prototype.checkTurn = function() {
-    if (this.roll) = 1
-    {
+    if (this.roll === 1){
       result = 1;
     }
-    else if (this.turn) = 25
-    {
+    else if (this.turn === 25){
       result = 25;
     }
     else {
@@ -26,8 +25,8 @@ function Player() {
     }
   }
 
-   Player.prototype.playaNumba = function() {
-     
+   Player.prototype.scoreTotal = function() {
+     if
    }
 
   // Player.prototype.turnTotalScore = function() {
