@@ -25,12 +25,13 @@ function Player() {
       this.turnTotal += 25;
       this.fakescore = 0;
       this.fakescore += this.roll;
-      alert("Sorry " + this.playername + ", you rolled a 1! You fail!")
+      alert("Sorry " + this.playername + ", you rolled a 1! You stink!")
     }
   }
 
    Player.prototype.scoreTotal = function() {
      if (this.turnTotal >= 25) {
+       alert(this.playerName + " You won, sucka!");
    }
 
   // Player.prototype.turnTotalScore = function() {
