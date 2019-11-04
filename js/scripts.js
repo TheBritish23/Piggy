@@ -4,6 +4,7 @@ function Player() {
   this.total = 0;
   this.turnTotal = 0;
   this.playername;
+  this.fakescore = 0;
   }
 
   Player.prototype.rollDice = function() {
@@ -22,11 +23,14 @@ function Player() {
     else {
       this.turnTotal += this.turnTotal
       this.turnTotal += 25;
+      this.fakescore = 0;
+      this.fakescore += this.roll;
+      alert("Sorry " + this.playername + ", you rolled a 1! You fail!")
     }
   }
 
    Player.prototype.scoreTotal = function() {
-     if
+     if (this.turnTotal >= 25) {
    }
 
   // Player.prototype.turnTotalScore = function() {
