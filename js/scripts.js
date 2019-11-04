@@ -11,8 +11,8 @@ function Player() {
     console.log(this.roll, this.turnTotal)
   }
 
-  Player.prototype.checkTurn = functions() {
-    if this.roll === 1
+  Player.prototype.checkTurn = function() {
+    if (this.roll) = 1
     {
       result = 1;
     }
@@ -26,6 +26,9 @@ function Player() {
     }
   }
 
+   Player.prototype.playaNumba = function() {
+     
+   }
 
   // Player.prototype.turnTotalScore = function() {
   //   this.turnTotal = Math.display
