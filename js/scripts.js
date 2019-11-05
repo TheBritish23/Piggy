@@ -39,29 +39,15 @@ function Player() {
   // }
 
 // Business logic for Game
-// function Game(Player, Roll) {
-//   this.Player = Player;
-//   this.Roll = Roll;
-// }
-//
-//   Game.prototype.playerOne = function() {
-//     this.Player =
-//   }
-//
-//   Game.prototype.Roll = function() {
-//     console.log(this.Player, this.Roll);
-//   }
+Player.prototype.hold = function() {
+
+}
 
 
 
 
 
 // User interface logic
-// var rollDice = function(){
-//   letRoll = Math.ceil(Math.rand()*6);
-//   console.log(roll);
-// }
-
 $(document).ready(function() {
   var playerOne = new Player()
     $(".btn-roll").click(function(){
