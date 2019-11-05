@@ -40,7 +40,8 @@ function Player() {
 
 // Business logic for Game
 Player.prototype.hold = function() {
-
+ this.turnTotal += this.fakescore
+ this.fakescore = 0;
 }
 
 
