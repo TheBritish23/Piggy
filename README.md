@@ -6,7 +6,7 @@
 
 ## Description
 
-_A game of Pig Dice where you can choose one or more players to play. Also uses an algorithim to predict the number you roll._
+_A game of Pig Dice where you win by getting 25 and losing by rolling 1. Also uses an algorithim to predict the number you roll._
 
 ## Setup/Installation Requirements
 
