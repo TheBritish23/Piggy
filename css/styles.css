@@ -37,8 +37,8 @@ h4 {
 
 // player
 
-.playername {
-    font-size: 70px;
+.playerName {
+    font-size: 100px;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
