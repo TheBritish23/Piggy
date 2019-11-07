@@ -3,7 +3,7 @@ function Player() {
   this.roll = 0;
   this.total = 0;
   this.turnTotal = 0;
-  this.playerName;
+  this.playername;
   this.fakescore = 0;
   }
 
@@ -25,13 +25,13 @@ function Player() {
       this.turnTotal += 25;
       this.fakescore = 0;
       this.fakescore += this.roll;
-      alert("Sorry " + this.playerName + ", you rolled a 1! You stink!")
+      alert("Sorry " + this.playername + ", you rolled a 1! You stink!")
     }
   }
 
    Player.prototype.scoreTotal = function() {
      if (this.turnTotal >= 25) {
-       alert(this.playerName + " You won, sucka!");
+       alert(this.playername + " You won, sucka!");
    }
 
   // Player.prototype.turnTotalScore = function() {
@@ -42,6 +42,10 @@ function Player() {
 Player.prototype.hold = function() {
  this.turnTotal += this.fakescore
  this.fakescore = 0;
+ alert(this.playername + ", your turn is over, pass the mouse before you get murdered!");
+}
+
+
 }
 
 
