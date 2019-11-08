@@ -60,4 +60,19 @@ $(document).ready(function(){
       })
      })
     })
-   };
+
+    $("button#player1-roll").click(function(event){
+    player1.roll = throwdice();
+    $("#rollDice").text(player1.roll);
+    player1.rollone();
+    $("#round-total-1").text(player1.fakescore);
+
+    $("button#player2-roll").click(function(event){
+    player2.roll = throwdice();
+    $("#rollDice2").text(player2.roll);
+    player2.rollone();
+    $("#round-total-2").text(player2.fakescore);
+
+  });
+
+  });
