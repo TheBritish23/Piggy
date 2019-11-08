@@ -45,19 +45,19 @@ Player.prototype.hold = function() {
  alert(this.playername + ", your turn is over, pass the mouse before you get murdered!");
 }
 
-
-}
-
-
-
-
-
 // User interface logic
-$(document).ready(function() {
+$(document).ready(function(){
   var playerOne = new Player()
     $(".btn-roll").click(function(){
       playerOne.rollDice()
     $("#disproll").append(playerOne.roll);
     event.preventDefault()
-   })
-  })
+    var playerTwo = new Player()
+      $(".btn-roll").click(function(){
+        playerTwo.rollDice()
+      $("#disproll").append(playerTwo.roll);
+      event.preventDefault()
+      })
+     })
+    })
+   };
