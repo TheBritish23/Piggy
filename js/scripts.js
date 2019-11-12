@@ -48,12 +48,12 @@ Player.prototype.hold = function() {
 // User interface logic
 $(document).ready(function(){
   var playerOne = new Player()
-    $(".btn-roll").click(function(){
+    $("#btn-roll1").click(function(){
       playerOne.rollDice()
     $("#disproll").append(playerOne.roll);
     event.preventDefault()
     var playerTwo = new Player()
-      $(".btn-roll").click(function(){
+      $("#btn-roll2").click(function(){
         playerTwo.rollDice()
       $("#disproll").append(playerTwo.roll);
       event.preventDefault()
@@ -61,18 +61,33 @@ $(document).ready(function(){
      })
     })
 
-    $("button#player1-roll").click(function(event){
+  $("button1#btn-roll1").click(function(event){
     player1.roll = throwdice();
     $("#rollDice").text(player1.roll);
     player1.rollone();
     $("#round-total-1").text(player1.fakescore);
+  });
 
-    $("button#player2-roll").click(function(event){
+  $("button2#btn-roll2").click(function(event){
     player2.roll = throwdice();
     $("#rollDice2").text(player2.roll);
     player2.rollone();
     $("#round-total-2").text(player2.fakescore);
-
   });
 
+  $("button2#btn-hold1").click(function(event){
+    player1.hold();
+    $("#total-score-1").text(player1.total);
+    $("#round-total-1").empty();
+    $("#rollDice11").empty();
+    player1.scoreTotal();
   });
+
+  $("button2#btn-hold2").click(function(event){
+   player2.hold();
+   $("#total-score-2").text(player2.totalscore);
+   $("#round-total-2").empty();
+   $("#rollDice12").empty();
+   player2.scoreTotal();
+ });
+};
