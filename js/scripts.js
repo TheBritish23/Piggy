@@ -49,14 +49,12 @@ Player.prototype.hold = function() {
 $(document).ready(function(){
   var playerOne = new Player()
     $("#btn-roll1").click(function(){
-      playerOne.rollDice()
 
     $("#disproll").append(playerOne.roll);
     event.preventDefault()
     var playerTwo = new Player()
 
       $("#btn-roll2").click(function(){
-        playerTwo.rollDice()
       $("#disproll").append(playerTwo.roll);
       event.preventDefault()
       })
@@ -81,7 +79,6 @@ $(document).ready(function(){
     player1.hold();
     $("#total-score-1").text(player1.total);
     $("#round-total-1").empty();
-    $("#rollDice11").empty();
     player1.scoreTotal();
   });
 
@@ -89,7 +86,6 @@ $(document).ready(function(){
    player2.hold();
    $("#total-score-2").text(player2.totalscore);
    $("#round-total-2").empty();
-   $("#rollDice12").empty();
    player2.scoreTotal();
  });
 };
