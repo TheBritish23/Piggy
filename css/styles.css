@@ -40,9 +40,9 @@ h4 {
     font-style: italic;
   }
 
-// player
+//player
 
-.playerName {
+.playername {
     font-size: 100px;
     text-align: center;
     text-transform: uppercase;
@@ -110,20 +110,3 @@ h4 {
 .player-current-score {
     font-size: 30px;
 }
-
-.dice {
-    position: absolute;
-    left: 50%;
-    top: 178px;
-    transform: translateX(-50%);
-    height: 100px;
-    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
-}
-
-.winner-0 { background-color: #f7f7f7; }
-.winner .player-name { font-weight: 300; color: #EB4D4D; }
-
-.winner-0 { background-color: rgba(255, 175, 189, 0.1) }
-.winner-1 { background-color: rgba(46, 204, 113, 0.1) }
-.winner-0 .player-name { font-weight: 300; color: #EB4D4D;}
-.winner-1 .player-name { font-weight: 300; color: #2ecc71;}

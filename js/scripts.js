@@ -50,9 +50,11 @@ $(document).ready(function(){
   var playerOne = new Player()
     $("#btn-roll1").click(function(){
       playerOne.rollDice()
+
     $("#disproll").append(playerOne.roll);
     event.preventDefault()
     var playerTwo = new Player()
+
       $("#btn-roll2").click(function(){
         playerTwo.rollDice()
       $("#disproll").append(playerTwo.roll);
