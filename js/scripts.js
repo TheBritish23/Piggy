@@ -72,15 +72,15 @@ $(document).ready(function(){
 
   $("button2#btn-hold1").click(function(event){
     playerOne.hold();
-    $("#total-score-1").text(playerOne.total);
+    $("#player-score-0").text(playerOne.total);
     $("#round-total-1").empty();
-    playerOne.scoreTotal();
+    playerOne.turnTotal();
   });
 
   $("button2#btn-hold2").click(function(event){
    playerTwo.hold();
-   $("#total-score-2").text(playerTwo.total);
-   $("#round-total-2").empty();
-   playerTwo.scoreTotal();
+   $("#player-score-0").text(playerTwo.total);
+   $("#round-total-1").empty();
+   playerTwo.turnTotal();
  });
 };
