@@ -34,10 +34,6 @@ function Player() {
        alert(this.playername + " You won, sucka!");
    }
 
-  // Player.prototype.turnTotalScore = function() {
-  //   this.turnTotal = Math.display
-  // }
-
 // Business logic for Game
 Player.prototype.hold = function() {
  this.turnTotal += this.fakescore
@@ -49,11 +45,10 @@ Player.prototype.hold = function() {
 $(document).ready(function(){
   var playerOne = new Player()
     $("#btn-roll1").click(function(){
-
     $("#disproll").append(playerOne.roll);
     event.preventDefault()
-    var playerTwo = new Player()
 
+    var playerTwo = new Player()
       $("#btn-roll2").click(function(){
       $("#disproll").append(playerTwo.roll);
       event.preventDefault()
@@ -62,30 +57,30 @@ $(document).ready(function(){
     })
 
   $("button1#btn-roll1").click(function(event){
-    player1.roll = throwdice();
-    $("#rollDice").text(player1.roll);
-    player1.rollone();
-    $("#round-total-1").text(player1.fakescore);
+    playerOne.roll = throwdice();
+    $("#rollDice").text(playerOne.roll);
+    playerOne.rollone();
+    $("#player-0-rolled-1").text(playerOne.fakescore);
   });
 
   $("button2#btn-roll2").click(function(event){
-    player2.roll = throwdice();
-    $("#rollDice2").text(player2.roll);
-    player2.rollone();
-    $("#round-total-2").text(player2.fakescore);
+    playerTwo.roll = throwdice();
+    $("#rollDice2").text(playerTwo.roll);
+    playerTwo.rollone();
+    $("#player-0-rolled-1").text(playerTwo.fakescore);
   });
 
   $("button2#btn-hold1").click(function(event){
-    player1.hold();
-    $("#total-score-1").text(player1.total);
+    playerOne.hold();
+    $("#total-score-1").text(playerOne.total);
     $("#round-total-1").empty();
-    player1.scoreTotal();
+    playerOne.scoreTotal();
   });
 
   $("button2#btn-hold2").click(function(event){
-   player2.hold();
-   $("#total-score-2").text(player2.totalscore);
+   playerTwo.hold();
+   $("#total-score-2").text(playerTwo.total);
    $("#round-total-2").empty();
-   player2.scoreTotal();
+   playerTwo.scoreTotal();
  });
 };
