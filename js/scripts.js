@@ -58,14 +58,14 @@ $(document).ready(function(){
 
   $("button1#btn-roll1").click(function(event){
     playerOne.roll = rollDice();
-    $("rollDice").text(playerOne.roll);
+    $("rollDice1").text(playerOne.roll);
     playerOne.rollone();
     $("player-0-rolled-1").text(playerOne.fakescore);
   });
 
   $("button2#btn-roll2").click(function(event){
     playerTwo.roll = rollDice();
-    $("#rollDice2").text(playerTwo.roll);
+    $("rollDice2").text(playerTwo.roll);
     playerTwo.rollone();
     $("player-0-rolled-1").text(playerTwo.fakescore);
   });
