@@ -79,10 +79,6 @@ h4 {
 	margin-bottom: 10px;
 }
 
-.active-0 { background-color: rgba(255, 175, 189, 0.1) }
-.active-1 { background-color: rgba(46, 204, 113, 0.1) }
-.active-0 .player-name, .active-1 .player-name { font-weight: 300; }
-
 .player-current-box-0 {
     background-color: #EB4D4D;
     color: #fff;
