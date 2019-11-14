@@ -65,7 +65,7 @@ h4 {
     text-align: center;
     font-size: 80px;
     font-weight: 100;
-    color: #2ecc71;
+    color: blue;
     margin-bottom: 130px;
 }
 
@@ -80,8 +80,6 @@ h4 {
 }
 
 .player-current-box-0 {
-    background-color: #EB4D4D;
-    color: #fff;
     width: 40%;
     margin: 0 auto;
     padding: 12px;
@@ -89,8 +87,6 @@ h4 {
 }
 
 .player-current-box-1 {
-    background-color: #2ecc71;
-    color: #fff;
     width: 40%;
     margin: 0 auto;
     padding: 12px;

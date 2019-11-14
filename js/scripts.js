@@ -44,13 +44,13 @@ Player.prototype.hold = function() {
 // User interface logic
 $(document).ready(function(){
   var playerOne = new Player()
-    $("#btn-roll1").click(function(){
-    $("#disproll").append(playerOne.roll);
+    $("btn-roll1").click(function(){
+    $("disproll").append(playerOne.roll);
     event.preventDefault()
 
     var playerTwo = new Player()
-      $("#btn-roll2").click(function(){
-      $("#disproll").append(playerTwo.roll);
+      $("btn-roll2").click(function(){
+      $("disproll").append(playerTwo.roll);
       event.preventDefault()
       })
      })
@@ -58,29 +58,29 @@ $(document).ready(function(){
 
   $("button1#btn-roll1").click(function(event){
     playerOne.roll = rollDice();
-    $("#rollDice").text(playerOne.roll);
+    $("rollDice").text(playerOne.roll);
     playerOne.rollone();
-    $("#player-0-rolled-1").text(playerOne.fakescore);
+    $("player-0-rolled-1").text(playerOne.fakescore);
   });
 
   $("button2#btn-roll2").click(function(event){
     playerTwo.roll = rollDice();
     $("#rollDice2").text(playerTwo.roll);
     playerTwo.rollone();
-    $("#player-0-rolled-1").text(playerTwo.fakescore);
+    $("player-0-rolled-1").text(playerTwo.fakescore);
   });
 
   $("button2#btn-hold1").click(function(event){
     playerOne.hold();
-    $("#player-score-0").text(playerOne.total);
-    $("#round-total-1").empty();
+    $("player-score-0").text(playerOne.total);
+    $("player-0-rolled-1").empty();
     playerOne.turnTotal();
   });
 
   $("button2#btn-hold2").click(function(event){
    playerTwo.hold();
-   $("#player-score-0").text(playerTwo.total);
-   $("#round-total-1").empty();
+   $("player-score-0").text(playerTwo.total);
+   $("player-0-rolled-1").empty();
    playerTwo.turnTotal();
  });
 };
