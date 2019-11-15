@@ -43,6 +43,7 @@ Player.prototype.hold = function() {
 
 // User interface logic
 $(document).ready(function(){
+
   var playerOne = new Player()
     $("btn-roll1").click(function(){
     $("disproll").append(playerOne.roll);
@@ -70,7 +71,7 @@ $(document).ready(function(){
     $("player-0-rolled-1").text(playerTwo.fakescore);
   })
 
-  $("button2#btn-hold1").click(function(event){
+  $("button1#btn-hold1").click(function(event){
     playerOne.hold();
     $("player-score-0").text(playerOne.total);
     $("player-0-rolled-1").empty();
