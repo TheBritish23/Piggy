@@ -52,35 +52,35 @@ $(document).ready(function(){
       $("btn-roll2").click(function(){
       $("disproll").append(playerTwo.roll);
       event.preventDefault()
-      })
      })
-    })
+   })
+ })
 
   $("button1#btn-roll1").click(function(event){
     playerOne.roll = rollDice();
     $("rollDice1").text(playerOne.roll);
     playerOne.rollone();
     $("player-0-rolled-1").text(playerOne.fakescore);
-  });
+  })
 
   $("button2#btn-roll2").click(function(event){
     playerTwo.roll = rollDice();
     $("rollDice2").text(playerTwo.roll);
     playerTwo.rollone();
     $("player-0-rolled-1").text(playerTwo.fakescore);
-  });
+  })
 
   $("button2#btn-hold1").click(function(event){
     playerOne.hold();
     $("player-score-0").text(playerOne.total);
     $("player-0-rolled-1").empty();
     playerOne.turnTotal();
-  });
+  })
 
   $("button2#btn-hold2").click(function(event){
    playerTwo.hold();
    $("player-score-0").text(playerTwo.total);
    $("player-0-rolled-1").empty();
    playerTwo.turnTotal();
- });
+ })
 };
