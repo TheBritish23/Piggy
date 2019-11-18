@@ -44,10 +44,10 @@ Player.prototype.hold = function() {
 // User interface logic
 $(document).ready(function(){
 
-  var playerOne = new Player()
-    $("btn-roll1").click(function(){
-    $("disproll").append(playerOne.roll);
-    event.preventDefault()
+    var playerOne = new Player()
+      $("btn-roll1").click(function(){
+      $("disproll").append(playerOne.roll);
+      event.preventDefault()
 
     var playerTwo = new Player()
       $("btn-roll2").click(function(){
