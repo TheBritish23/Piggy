@@ -62,10 +62,10 @@ $(document).ready(function(){
  // })
 
   $("#btn-roll1").click(function(event){
-    playerOne.roll = rollDice();
-    $("#rollDice1").text(playerOne.roll);
-    playerOne.rollone();
-    $("#player-0-rolled-1").text(playerOne.fakescore);
+    playerOne.rollDice();
+    $("#player1-roll").text(playerOne.roll);
+    // playerOne.rollone();
+    // $(".player-score-0").text(playerOne.fakescore);
   })
 
   // $("button2#btn-roll2").click(function(event){
