@@ -43,8 +43,7 @@ Player.prototype.hold = function() {
 
 // User interface logic
 $(document).ready(function(){
-
-  $("button1").click(function(){
+  $("form#hog").click(function(){
     $("current-label").append("<b>Your Score!</b>");
 });
 
