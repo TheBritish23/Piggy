@@ -45,7 +45,7 @@ Player.prototype.hold = function() {
 $(document).ready(function(){
 
   $("button1").click(function(){
-    $("current-label").append("<b>Appended text</b>");
+    $("current-label").append("<b>Your Score!</b>");
 });
 
     var playerOne = new Player()
@@ -77,8 +77,8 @@ $(document).ready(function(){
 
   $("button1#btn-hold1").click(function(event){
     playerOne.hold();
-    $("player-score-0").text(playerOne.total);
-    $("player-0-rolled-1").empty();
+    $(".player-score-0").text(playerOne.total);
+    $(".player-0-rolled-1").empty();
     playerOne.turnTotal();
   })
 
