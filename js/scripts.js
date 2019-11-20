@@ -16,6 +16,7 @@ function Player() {
   Player.prototype.checkTurn = function() {
     if (this.roll === 1){
       this.result = 1;
+      alert("Sorry " + this.playername + ", you rolled a 1! You stink!")
     }
     else if (this.turn === 25){
       this.result = 25;
@@ -25,7 +26,6 @@ function Player() {
       this.turnTotal += 25;
       this.fakescore = 0;
       this.fakescore += this.roll;
-      alert("Sorry " + this.playername + ", you rolled a 1! You stink!")
     }
   }
 
