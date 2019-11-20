@@ -74,10 +74,10 @@ $(document).ready(function(){
   //   $("player-0-rolled-1").text(playerTwo.fakescore);
   // })
 
-  $("button1#btn-hold1").click(function(event){
+  $("1#btn-hold1").click(function(event){
     playerOne.hold();
-    $(".player-score-0").text(playerOne.total);
-    $(".player-0-rolled-1").empty();
+    $("#player-score-0").text(playerOne.total);
+    $("#player-0-rolled-1").empty();
     playerOne.turnTotal();
   })
 
