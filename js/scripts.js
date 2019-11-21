@@ -3,20 +3,18 @@ function Player() {
   this.roll = 0;
   this.total = 0;
   this.turnTotal = 0;
-  this.playername;
   this.fakescore = 0;
   }
 
   Player.prototype.rollDice = function() {
     this.roll = Math.ceil(Math.random()*6)
     this.turnTotal += this.roll;
-    console.log(this.roll, this.turnTotal)
   }
 
   Player.prototype.checkTurn = function() {
     if (this.roll === 1){
       this.result = 1;
-      alert("Sorry " + this.playername + ", you rolled a 1! You stink!")
+      alert("Sorry, you rolled a 1! You stink!")
     }
     else if (this.turn === 25){
       this.result = 25;
@@ -31,20 +29,20 @@ function Player() {
 
    Player.prototype.scoreTotal = function() {
      if (this.turnTotal >= 25) {
-       alert(this.playername + " You won, sucka!");
+       alert("You won, sucka!");
    }
 }
 // Business logic for Game
 Player.prototype.hold = function() {
  this.turnTotal += this.fakescore
  this.fakescore = 0;
- alert(this.playername + ", your turn is over, pass the mouse before you get murdered!");
+ alert("your turn is over, pass the mouse before you get murdered!");
 }
 
 // User interface logic
 $(document).ready(function(){
   $("form#hog").click(function(){
-    $("current-box").append("<b>Your Score!</b>");
+    $("#current-box").append("<p> rollDice </p>");
 });
 
     var playerOne = new Player()
