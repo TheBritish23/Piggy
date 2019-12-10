@@ -58,9 +58,9 @@ $(document).ready(function(){
  //   })
  // })
 
-  $("#btn-roll1").click(function(event){
+  $("#btn-roll").click(function(event){
     playerOne.rollDice();
-    $("#player1-roll").text(playerOne.roll);
+    $("#player-roll").text(playerOne.roll);
     // playerOne.rollone();
     // $(".player-score-0").text(playerOne.fakescore);
   })
@@ -72,7 +72,7 @@ $(document).ready(function(){
   //   $("player-0-rolled-1").text(playerTwo.fakescore);
   // })
 
-  $("#btn-hold1").click(function(event){
+  $("#btn-hold").click(function(event){
     playerOne.hold();
     $("#player-score-0").text(playerOne.total);
     $("#player-0-rolled-1").empty();
