@@ -60,7 +60,7 @@ $(document).ready(function(){
 
   $("#btn-roll").click(function(event){
     player.rollDice();
-    $("#player-roll").text(playerOne.roll);
+    $("#player-roll").text(player.roll);
     // playerOne.rollone();
     // $(".player-score-0").text(playerOne.fakescore);
   })
