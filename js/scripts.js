@@ -45,7 +45,7 @@ $(document).ready(function(){
     $("#current-box").append("<p> rollDice </p>");
 });
 
-    var playerOne = new Player()
+    var player = new Player()
       // $(".btn-roll1").click(function(){
       // $(".current-label").append(playerOne.roll);
       // event.preventDefault()
@@ -64,7 +64,6 @@ $(document).ready(function(){
     // playerOne.rollone();
     // $(".player-score-0").text(playerOne.fakescore);
   })
-
   // $("button2#btn-roll2").click(function(event){
   //   playerTwo.roll = rollDice();
   //   $("rollDice2").text(playerTwo.roll);
