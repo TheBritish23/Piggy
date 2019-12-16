@@ -59,6 +59,7 @@ $(document).ready(function(){
  // })
 
   $("#btn-roll").click(function(event){
+    event.preventDefault();
     player.rollDice();
     $("#player-roll").text(player.roll);
     // playerOne.rollone();
@@ -72,6 +73,7 @@ $(document).ready(function(){
   // })
 
   $("#btn-hold").click(function(event){
+    console.log(hold);
     player.hold();
     $("#player-score-0").text(player.total);
     $("#player-0-rolled-1").empty();
