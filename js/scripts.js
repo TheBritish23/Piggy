@@ -7,7 +7,7 @@ function Player() {
   }
 
   Player.prototype.rollDice = function() {
-    this.roll = Math.ceil(Math.random()*6)
+    this.roll = Math.ceil(6*Math.random())+1;
     this.turnTotal += this.roll;
   }
 
@@ -42,7 +42,7 @@ Player.prototype.hold = function() {
 // User interface logic
 $(document).ready(function(){
   $("form#hog").click(function(){
-    $("#current-box").append("<p> rollDice </p>");
+    $("#current-box").append("<p>rollDice</p>");
 });
 
     var player = new Player()
