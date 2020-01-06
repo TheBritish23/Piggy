@@ -19,8 +19,6 @@ button {
   font-weight: bold;
   font-style: italic;
   margin: 4px 2px;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
   cursor: pointer;
 }
 
