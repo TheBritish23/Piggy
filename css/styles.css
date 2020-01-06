@@ -2,12 +2,14 @@ h1 {
   font-family: 'Londrina Outline', cursive;
   font-style: italic;
   font-weight: bold;
+  text-align: center;
   color: green;
 }
 
 button {
   background-color: red;
   border: none;
+  border-radius: 12px;
   color: black;
   padding: 20px;
   text-align: center;
@@ -17,6 +19,9 @@ button {
   font-weight: bold;
   font-style: italic;
   margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
 
 h4 {
