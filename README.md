@@ -26,7 +26,8 @@ _email.com_
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+_Using JS, I had to communicate to the console that to randomly generate a number between 1 and 6 and add them
+but delete them if it's and continue until the limit. Unfortunately, the computer has a mind of it's own._
 
 ## Specifications
 
