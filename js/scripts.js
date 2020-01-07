@@ -62,6 +62,8 @@ $(document).ready(function(){
     event.preventDefault();
     player.rollDice();
     $("#player-roll").text(player.roll);
+    $("#turnTotal").text(player.turnTotal);
+    console.log(player.turnTotal);
     // playerOne.rollone();
     // $(".player-score-0").text(playerOne.fakescore);
   })
