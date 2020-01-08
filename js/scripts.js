@@ -75,11 +75,10 @@ $(document).ready(function(){
   // })
 
   $("#btn-hold").click(function(event){
-    console.log(hold);
-    player.hold();
-    $("#player-score-0").text(player.total);
-    $("#player-0-rolled-1").empty();
-    player.turnTotal();
+    player.checkTurn();
+    $("#player-hold").text(player.hold);
+    $("#player-score").empty();
+    console.log(player.checkTurn);
   })
 
 //   $("button2#btn-hold2").click(function(event){
