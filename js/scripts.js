@@ -77,7 +77,7 @@ $(document).ready(function(){
   $("#btn-hold").click(function(event){
     player.checkTurn();
     $("#player-hold").text(player.hold);
-    $("#player-score").empty();
+    $("#checkTurn").text(player.checkTurn);
     console.log(player.checkTurn);
   })
 
