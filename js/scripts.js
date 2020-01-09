@@ -75,9 +75,9 @@ $(document).ready(function(){
   // })
 
   $("#btn-hold").click(function(event){
-    player.checkTurn();
-    $("#player-hold").text(player.checkTurn);
-    $("#player-score").empty();
+    player.total();
+    $("#player-hold").text(player.total);
+    $("#checkTurn").empty();
     console.log(player.checkTurn);
   })
 
