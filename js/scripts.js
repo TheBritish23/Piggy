@@ -16,19 +16,19 @@ function Player() {
       this.result = 1;
       alert("Sorry, you rolled a 1! You stink!")
     }
-    else if (this.turn === 25){
-      this.result = 25;
+    else if (this.turn === 30){
+      this.result = 30;
     }
     else {
       this.turnTotal += this.turnTotal
-      this.turnTotal += 25;
+      this.turnTotal += 30;
       this.fakescore = 0;
       this.fakescore += this.roll;
     }
   }
 
    Player.prototype.scoreTotal = function() {
-     if (this.turnTotal >= 25) {
+     if (this.turnTotal >= 30) {
        alert("You won, sucka!");
    }
 }
@@ -75,6 +75,7 @@ $(document).ready(function(){
   // })
 
   $("#btn-hold").click(function(event){
+    event.preventDefault();
     player.checkTurn();
     $("#player-hold").text(player.total);
     $("#player-score").empty();
