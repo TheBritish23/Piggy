@@ -34,8 +34,8 @@ function Player() {
 }
 // Business logic for Game
 Player.prototype.hold = function() {
- this.turnTotal += this.fakescore
- this.fakescore = 0;
+ this.checkTurn += this.total
+ this.total = 0;
  alert("your turn is over, pass the mouse before you get murdered!");
 }
 
