@@ -6,6 +6,12 @@ function Player() {
   this.fakescore = 0;
   }
 
+function rollEnd() {
+  if (rollEnd==1) {
+    total=0;
+  }
+}
+
   Player.prototype.rollDice = function() {
     this.roll = Math.ceil(6*Math.random())+1;
     this.turnTotal += this.roll;
