@@ -84,7 +84,7 @@ $(document).ready(function(){
     event.preventDefault();
     player.checkTurn();
     $("#player-hold").text(player.total);
-    $("#player-score").empty();
+    $("#checkTurn").empty();
     console.log(player.checkTurn);
   })
 
