@@ -48,7 +48,7 @@ Player.prototype.hold = function() {
 // User interface logic
 $(document).ready(function(){
   $("form#hog").click(function(){
-    $("#current-box").append("<p>rollDice</p>");
+    $("#current-box").append("rollDice");
 });
 
     var player = new Player()
