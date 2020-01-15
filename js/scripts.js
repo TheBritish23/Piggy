@@ -22,12 +22,11 @@ function rollEnd() {
       this.result = 1;
       alert("Sorry, you rolled a 1! You stink!")
     }
-    else if (this.turn === 30){
-      this.result = 30;
+    else if (this.turnTotal >= 30){
+      alert("You won, sucka!");
     }
     else {
       this.turnTotal += this.turnTotal
-      this.turnTotal += 30;
       this.fakescore = 0;
       this.fakescore += this.roll;
     }
@@ -35,7 +34,6 @@ function rollEnd() {
 
    Player.prototype.scoreTotal = function() {
      if (this.turnTotal >= 30) {
-       alert("You won, sucka!");
    }
 }
 // Business logic for Game
@@ -83,8 +81,8 @@ $(document).ready(function(){
   $("#btn-hold").click(function(event){
     event.preventDefault();
     player.checkTurn();
-    $("#player-hold").text(player.total);
-    $("#checkTurn").empty();
+    $("#player-hold").empty();
+    $("#checkTurn").text(player.total);
     console.log(player.checkTurn);
   })
 
