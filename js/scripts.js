@@ -19,7 +19,7 @@ function rollEnd() {
 
   Player.prototype.checkTurn = function() {
     if (this.roll === 1){
-      this.result = 1;
+      this.rollEnd = 1;
       alert("Sorry, you rolled a 1! You stink!")
     }
     else if (this.turnTotal >= 30){
@@ -36,6 +36,7 @@ function rollEnd() {
      if (this.turnTotal >= 30) {
    }
 }
+
 // Business logic for Game
 Player.prototype.hold = function() {
  this.checkTurn += this.total
@@ -67,7 +68,7 @@ $(document).ready(function(){
     player.rollDice();
     $("#player-roll").text(player.roll);
     $("#turnTotal").text(player.turnTotal);
-    console.log(player.turnTotal);
+    console.log(player.scoreTotal);
     // playerOne.rollone();
     // $(".player-score-0").text(playerOne.fakescore);
   })
@@ -82,8 +83,8 @@ $(document).ready(function(){
     event.preventDefault();
     player.checkTurn();
     $("#player-hold").empty();
-    $("#checkTurn").text(player.total);
-    console.log(player.checkTurn);
+    $("#scoreTotal").text(player.total);
+    console.log(player.scoreTotal);
   })
 
 //   $("button2#btn-hold2").click(function(event){
