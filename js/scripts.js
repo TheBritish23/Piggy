@@ -8,13 +8,14 @@ function Player() {
 
 function rollEnd() {
   if (rollEnd==1) {
-    total=0;
+  return  total=0;
   }
 }
 
   Player.prototype.rollDice = function() {
-    this.roll = Math.ceil(6*Math.random())+1;
+    this.roll = Math.ceil(6*Math.random());
     this.turnTotal += this.roll;
+    this.checkTurn();
   }
 
   Player.prototype.checkTurn = function() {
@@ -48,6 +49,7 @@ Player.prototype.hold = function() {
 $(document).ready(function(){
   $("form#hog").click(function(){
     $("#current-box").append("rollDice");
+    // document.getElementById("Reset Game").rollEnd();
 });
 
     var player = new Player()
